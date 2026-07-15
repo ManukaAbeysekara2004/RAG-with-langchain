@@ -5,4 +5,5 @@ An interactive **Retrieval-Augmented Generation (RAG)** application developed us
 ## **🏗️ Architecture Workflow**
 
 The system operates based on the structural flow depicted in the project workflow:
+
 ![Architecture Workflow](images/img.png)
