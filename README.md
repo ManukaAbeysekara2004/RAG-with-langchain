@@ -9,6 +9,7 @@ An interactive **Retrieval-Augmented Generation (RAG)** application developed us
 The system operates based on the structural flow depicted in the project workflow:
 
 ![Architecture Workflow](images/img.png)
+
 ---
 
 ## **1. 📂 The Ingestion Pipeline (Green Path)**
@@ -22,6 +23,7 @@ The system operates based on the structural flow depicted in the project workflo
 * Similarity Search: The system runs a vector search matching the user's query vector against indexed document vectors inside the database.
 * Augmented Context: The top *k* matching **Retrieved Chunks** are extracted to serve as the ground-truth context.
 * LLM Generation: The retrieved text chunks are packaged alongside system instructions and the original query into a refined prompt layout, which the LLM reads to generate a hallucination-minimized **Response.**
+
 ---
 
 ## **🛠️ Tech Stack & Key Components**
@@ -31,6 +33,7 @@ The system operates based on the structural flow depicted in the project workflo
 * 🗄️ Vector Store Database: ChromaDB
 * 📄 Document Loader: PyPDFLoader
 * 🎨 User Interface: Gradio ChatInterface
+
 ---
 
 ## **📸 Application Screenshots**
@@ -69,6 +72,7 @@ HUGGINGFACE_TOKEN = "your_hf_token_here"
 ```
 * Click Runtime ➔ Run all from the top bar menu.
 * Scroll to the last cell output where a live, shareable Gradio Web UI URL will appear. Click the link to begin chatting interactively with your database!
+
 ---
 
 ## **📝 Code Pipeline Specs**
@@ -83,6 +87,7 @@ Context: {context}
 Question: {input}
 Answer:
 ```
+
 ---
 
 ## 📜 License & Credits
